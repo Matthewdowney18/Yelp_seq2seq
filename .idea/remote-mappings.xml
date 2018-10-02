@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@bb5368c3-9786-4c0a-92c1-bd9a7892189e" />
+        <remote-mappings server-id="python@sftp://mattd@172.16.33.14:22/home/mattd/venvs/yelp_seq2seq/bin/python3.6">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/mattd/pycharm/yelp_seq2seq" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
