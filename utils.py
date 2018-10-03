@@ -1,5 +1,6 @@
 import numpy as np
 import torch
+from vecto import embeddings
 from torch.autograd import Variable
 from torch.nn import Parameter
 
@@ -55,3 +56,7 @@ def get_sentence_from_indices(indices, vocab, eos_token, join=True):
     tokens = tokens
 
     return tokens
+
+def get_embeddings_matrix(embeddings_dir):
+    emb = embeddings.load_from_dir(embeddings_dir)
+    emb_tensor = torch

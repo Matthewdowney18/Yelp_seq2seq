@@ -124,7 +124,7 @@ class SentenceDataset(SentencePairDataset):
         with open(filename, 'r', encoding='utf8') as f:
             sentence1 = []
             for line in f:
-                if line.count(' ') < 10 :
-                    sentence1.append(line)
+                if line.count(' ') < 10:
+                    sentence1.append(line[:-2])
         sentence2 = sentence1
         return sentence1, sentence2

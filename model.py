@@ -34,6 +34,8 @@ class Seq2SeqModel(torch.nn.Module):
         ##############################
 
         self.emb = nn.Embedding(vocab_size, embedding_dim)
+        self.emb.from_pretrained()
+
         self.enc = nn.LSTM(embedding_dim, hidden_size, batch_first=True)
         self.dec = nn.LSTMCell(embedding_dim, hidden_size)
         self.lin = nn.Linear(hidden_size, vocab_size)
